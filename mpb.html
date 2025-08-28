@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MPB - Site Único de V para M</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #f4ecd8, #e0c097);
+    color: #333;
+    transition: background 0.5s;
+}
+header {
+    background-color: #5a2d82;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h1 { margin: 0; }
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #a52a2a;
+}
+.tab {
+    padding: 12px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+.tab:hover { background: #7b1f1f; }
+.tab.active { border-bottom: 3px solid #ffd700; }
+.content {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: none;
+    transition: 0.3s;
+}
+.content.active { display: block; }
+.letra { line-height: 1.8; white-space: pre-wrap; }
+.dedicatoria {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #5a2d82;
+}
+/* Fundo animado romântico para Disritmia */
+#disritmia {
+    background: linear-gradient(135deg, rgba(255,182,193,0.2), rgba(255,105,180,0.2), rgba(255,182,193,0.2));
+    animation: pulse 6s infinite alternate;
+    border-radius: 15px;
+}
+@keyframes pulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+a { color: #5a2d82; text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🎶 MPB - Música Popular Brasileira</h1>
+</header>
+
+<div class="tabs">
+    <div class="tab active" data-tab="inicio">Início</div>
+    <div class="tab" data-tab="rita">Rita Lee</div>
+    <div class="tab" data-tab="chico">Chico Buarque</div>
+    <div class="tab" data-tab="caetano">Caetano Veloso</div>
+    <div class="tab" data-tab="disritmia">Disritmia</div>
+</div>
+
+<div id="inicio" class="content active">
+    <h2>Bem-vindo ao mundo da MPB</h2>
+    <p>A Música Popular Brasileira (MPB) é um dos maiores tesouros culturais do Brasil. Aqui você vai conhecer grandes artistas, suas histórias e suas músicas que marcaram gerações.</p>
+</div>
+
+<div id="rita" class="content">
+    <h2>Rita Lee</h2>
+    <p><strong>Descrição completa:</strong><br>
+    Rita Lee Jones, conhecida apenas como Rita Lee, nasceu em 31 de dezembro de 1947, em São Paulo. Ela é chamada de "Rainha do Rock Brasileiro" e é reconhecida por sua irreverência, voz marcante e ousadia musical. Rita começou sua carreira como vocalista do Os Mutantes, banda essencial do movimento tropicalista, mas logo seguiu carreira solo, tornando-se uma referência em rock, pop e MPB, sempre misturando estilos e quebrando padrões.</p>
+    <p><strong>História:</strong><br>
+    Nos anos 60, Rita se destacou no cenário tropicalista, ao lado de nomes como Caetano Veloso e Gilberto Gil. Com Os Mutantes, ela ajudou a reinventar o rock brasileiro com experimentações sonoras. Nos anos 70, enfrentou censura durante a ditadura militar, mas conseguiu se destacar com letras provocativas e cheias de humor. Na carreira solo, Rita Lee consolidou seu estilo irreverente e seu talento para criar hits que atravessam gerações.</p>
+    <p><strong>Algumas músicas marcantes:</strong><br>
+    Lança Perfume<br>
+    Mania de Você<br>
+    Ovelha Negra<br>
+    Amor e Sexo<br>
+    Doce Vampiro</p>
+</div>
+
+<div id="chico" class="content">
+    <h2>Chico Buarque</h2>
+    <p><strong>Descrição completa:</strong><br>
+    Chico Buarque de Hollanda nasceu em 19 de junho de 1944, no Rio de Janeiro. É compositor, cantor, escritor e dramaturgo. Conhecido por sua poesia refinada e crítica social sutil, Chico mistura MPB, samba e bossa nova, criando canções que falam de amor, política e cotidiano brasileiro com inteligência e lirismo.</p>
+    <p><strong>História:</strong><br>
+    Chico se tornou figura central da MPB nos anos 60, produzindo obras que criticavam a ditadura militar de forma velada e elegante. Suas letras sempre foram sofisticadas, cheias de jogos de palavras e duplos sentidos. Além de música, ele escreveu romances e peças teatrais premiadas. A censura não impediu que suas músicas se tornassem hinos do Brasil.</p>
+    <p><strong>Algumas músicas marcantes:</strong><br>
+    A Banda<br>
+    Construção<br>
+    Apesar de Você<br>
+    Cálice (com Gilberto Gil)<br>
+    João e Maria</p>
+</div>
+
+<div id="caetano" class="content">
+    <h2>Caetano Veloso</h2>
+    <p><strong>Descrição completa:</strong><br>
+    Caetano Emanuel Viana Teles Veloso nasceu em 7 de agosto de 1942, em Santo Amaro, Bahia. Ele é cantor, compositor, escritor e ativista cultural, considerado um dos maiores nomes da música popular brasileira. Caetano é conhecido por sua voz versátil, mistura de ritmos e pela ousadia lírica e musical, transitando entre MPB, tropicalismo, pop, rock e música experimental.</p>
+    <p><strong>História:</strong><br>
+    Nos anos 60, Caetano se tornou um dos líderes do Tropicalismo, movimento que revolucionou a música brasileira, misturando tradição e modernidade, brasileiro e internacional. Durante a ditadura militar, foi preso e exilado, passando alguns anos em Londres. Retornou ao Brasil com novas ideias, sempre inovando e colaborando com outros grandes artistas. Sua carreira é marcada por reinvenções constantes, engajamento político e uma vasta produção artística.</p>
+    <p><strong>Algumas músicas marcantes:</strong><br>
+    Alegria, Alegria<br>
+    Sampa<br>
+    Você é Linda<br>
+    Odara<br>
+    Coração Vagabundo</p>
+</div>
+
+<div id="disritmia" class="content">
+    <h2>Disritmia - Letra Completa</h2>
+    <p class="letra">
+Eu quero me esconder debaixo
+Dessa sua saia pra fugir do mundo
+Pretendo também me embrenhar
+No emaranhado desses teus cabelos
+Preciso transfundir teu sangue
+Pro meu coração que é tão vagabundo
+
+Me deixe te trazer num dengo
+Pra num cafuné fazer os meus apelos
+Me deixe te trazer num dengo
+Pra num cafuné fazer os meus apelos
+
+Eu quero ser exorcizado
+Pela água benta desse olhar infindo
+Que bom é ser fotografado
+Mas pela retina desses olhos lindos
+Me deixe hipnotizado
+Pra acabar de vez com essa disritmia
+
+Vem logo, vem curar teu nego
+Que chegou de porre lá da boemia
+Vem logo, vem curar teu nego
+Que chegou de porre lá da boemia
+
+Eu quero me esconder debaixo
+Dessa tua saia pra fugir do mundo
+Pretendo também me embrenhar
+No emaranhado desses teus cabelos
+Preciso transfundir teu sangue
+Pro meu coração que é tão vagabundo
+
+Me deixe te trazer num dengo
+Pra num cafuné fazer os meus apelos
+Me deixe te trazer num dengo
+Pra num cafuné fazer os meus apelos
+
+Eu quero ser exorcizado
+Pela água benta desse olhar infindo
+Que bom é ser fotografado
+Mas pela retina desses olhos lindos
+Me deixe hipnotizado
+Pra acabar de vez com essa disritmia
+
+Vem logo, vem curar teu nego
+Que chegou de porre lá da boemia
+(Vem logo, vem curar teu nego)
+(Que chegou de porre lá da boemia)
+
+Vem logo, vem curar teu nego
+Que chegou de porre lá da boemia
+Vem logo, vem curar teu nego
+Que chegou de porre lá da boemia
+    </p>
+    <div class="dedicatoria">De Vinicius pra Mariah 💜</div>
+</div>
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const target = tab.dataset.tab;
+        contents.forEach(c => c.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+        // Fundo especial para Disritmia
+        if(target === 'disritmia'){
+            document.body.style.background = 'linear-gradient(135deg, #ffe6f0, #ffb6c1, #ff69b4)';
+        } else {
+            document.body.style.background = 'linear-gradient(to bottom, #f4ecd8, #e0c097)';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
